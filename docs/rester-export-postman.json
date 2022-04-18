@@ -1,0 +1,109 @@
+{
+    "info": {
+        "name": "RESTer",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Tasks API",
+            "item": [
+                {
+                    "request": {
+                        "url": "http://localhost:3030/tasks",
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"My first task\",\n    \"description\": \"Plan another tasks\"\n}"
+                        }
+                    },
+                    "id": "rester-3",
+                    "name": "1. create task"
+                },
+                {
+                    "request": {
+                        "url": "http://localhost:3030/tasks",
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"My second task\",\n    \"description\": \"Check the list of tasks\"\n}"
+                        }
+                    },
+                    "id": "rester-2",
+                    "name": "2. create one more task"
+                },
+                {
+                    "request": {
+                        "url": "http://localhost:3030/tasks",
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    },
+                    "id": "rester-4",
+                    "name": "3. get current tasks"
+                },
+                {
+                    "request": {
+                        "url": "http://localhost:3030/tasks/{id}/status",
+                        "method": "PATCH",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"status\": \"DONE\"\n}"
+                        }
+                    },
+                    "id": "rester-6",
+                    "name": "4. update task"
+                },
+                {
+                    "request": {
+                        "url": "http://localhost:3030/tasks/{id}",
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    },
+                    "id": "rester-1",
+                    "name": "5. delete task"
+                },
+                {
+                    "request": {
+                        "url": "http://localhost:3030/tasks?search=first&status=OPEN",
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    },
+                    "id": "rester-5",
+                    "name": "6. find tasks"
+                }
+            ]
+        }
+    ]
+}
