@@ -48,7 +48,7 @@ npm install class-validator class-transformer
 
 `.eslintrc.js` - added rule for unused underscore param
 
-```json
+```
 "@typescript-eslint/no-unused-vars": [
   "error",
   {
