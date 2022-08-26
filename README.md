@@ -36,7 +36,7 @@ Tasks API:
 Model:
 
 ```typescript
-interface Task {
+class Task {
   id: string;
   name: string;
   description: string;
