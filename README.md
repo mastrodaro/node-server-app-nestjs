@@ -12,6 +12,14 @@ Example of Tasks API created with [NestJS](https://nestjs.com/). Utilizes:
 * prettier
 * jest
 
+Features:
+
+* auth - jwt (passport)
+* tasks CRUD
+* app config (dev/prod) with schema validation (joi)
+* logging
+* transform interceptor - hide sensitive data
+
 ## Description
 
 Bootstrapped with `nest new node-server-app-nestjs`.
