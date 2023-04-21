@@ -22,9 +22,30 @@ Features:
 
 ## Description
 
+CLI:
+
+```shell
+npm i -g @nestjs/cli
+```
+
 Bootstrapped with `nest new node-server-app-nestjs`.
 
-Tasks API:
+### MOTD Api (unprotected):
+
+* get motd
+* create motd
+* update motd
+* delete motd
+
+Model:
+
+```typescript
+class Motd {
+  message: string;
+}
+```
+
+### Tasks API:
 
 * get all tasks
 * get task

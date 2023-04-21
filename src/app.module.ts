@@ -1,8 +1,9 @@
 import { Module } from "@nestjs/common";
-import { TasksModule } from "./tasks/tasks.module";
-import { AuthModule } from "./auth/auth.module";
 import { ConfigModule } from "@nestjs/config";
 import { configSchema } from "../config.schema";
+import { TasksModule } from "./tasks/tasks.module";
+import { AuthModule } from "./auth/auth.module";
+import { MotdModule } from "./motd/motd.module";
 
 @Module({
   imports: [
@@ -11,6 +12,7 @@ import { configSchema } from "../config.schema";
       validationSchema: configSchema,
     }),
     AuthModule,
+    MotdModule,
     TasksModule,
   ],
   controllers: [],
